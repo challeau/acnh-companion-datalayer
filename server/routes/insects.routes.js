@@ -5,6 +5,7 @@ const Insects = require("../models/Insects.model");
 router.get("/", async (req, res) => {
   try {
     const insects = await Insects.find({});
+    console.log(insects);
     res.status(200).json(insects);
   }
   catch (error){

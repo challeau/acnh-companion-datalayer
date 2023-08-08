@@ -4,11 +4,10 @@ const app = express();
 const cors = require('cors');
 
 // Link frontend
-app.use(cors({
-  origin: ['*'],
-  // credentials: true
-}));
-
+// app.use(cors({
+//   origin: ['localhost:3000', process.env.FRONTEND_URL]
+// }));
+app.use(cors());
 
 // Link middleware
 const { isAuthenticated, isAdmin } = require("./middleware/middlewares.js");
