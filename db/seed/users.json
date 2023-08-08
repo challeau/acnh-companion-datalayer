@@ -1,0 +1,8 @@
+{
+  "dev-test-admin": {
+    "role": "admin"
+  },
+  "charlotte": {
+    "role": "admin"
+  }
+}
