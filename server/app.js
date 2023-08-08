@@ -5,8 +5,8 @@ const cors = require('cors');
 
 // Link frontend
 app.use(cors({
-  origin: [process.env.FRONTEND_URL],
-  credentials: true
+  origin: ['*'],
+  // credentials: true
 }));
 
 
